@@ -4,56 +4,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
     <title>Formulario 2</title>
   </head>
   <body>
     <h1>Formulario de Registro</h1>
     <form action="">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" /><br />
-      <label for="apellidos">Apellidos:</label>
-      <input type="text" id="apellidos" /><br />
+      <p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" />
+      </p>
+      <p>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" />
+      </p>
 
       <!-- Genero -->
-      <label for="">Sexo:</label>
-      <input type="radio" id="hombre" value="hombre" />
-      <label for="hombre">Hombre</label>
-      <input type="radio" id="mujer" value="mujer" />
-      <label for="mujer">Mujer</label><br />
+      <p>
+        <label for="">Sexo:</label>
+        <input type="radio" id="hombre" value="hombre" />
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="mujer" value="mujer" />
+        <label for="mujer">Mujer</label><br />
+      </p>
 
       <!-- Mail -->
-      <label for="correo">Correo:</label>
-      <input type="text" id="correo" /><br />
+      <p>
+        <label for="correo">Correo:</label>
+        <input type="text" id="correo" />
+      </p>
 
       <!-- Poblacion -->
-      <label for="poblacion">Poblacion:</label>
-      <select name="select" id="poblacion">
-        <option value="alicante">Alicante</option>
-        <option value="madrid">Madrid</option>
-        <option value="barcelona">Barcelona</option></select
-      ><br />
-
+      <p>
+        <label for="poblacion">Poblacion:</label>
+        <select name="select" id="poblacion">
+          <option value="alicante">Alicante</option>
+          <option value="madrid">Madrid</option>
+          <option value="barcelona">Barcelona</option>
+        </select>
+      </p>
       <!-- Descripcion -->
-      <label for="descripcion">Descripcion</label><br />
+      <p><label for="descripcion">Descripcion</label></p>
       <textarea
         name="descripcion"
         id="descripcion"
         cols="30"
         rows="10"
-      ></textarea
-      ><br />
+      ></textarea>
 
       <!-- Checkbox -->
-      <input type="checkbox" name="novedades" id="novedades" />
-      <label for="novedades"
-        >Deseo recibir informacion sobre novedades y ofertas</label
-      ><br />
-      <input type="checkbox" name="terminos" id="terminos" />
-      <label for="terminos"
-        >Declaro haber leido y aceptar las condiciones del programa y la
-        normativa sobre proteccion de datos</label
-      ><br />
+      <p>
+        <input type="checkbox" name="novedades" id="novedades" />
+        <label for="novedades"
+          >Deseo recibir informacion sobre novedades y ofertas</label
+        >
+      </p>
+      <p>
+        <input type="checkbox" name="terminos" id="terminos" />
+        <label for="terminos"
+          >Declaro haber leido y aceptar las condiciones del programa y la
+          normativa sobre proteccion de datos</label
+        >
+      </p>
       <button>Enviar</button>
     </form>
   </body>
