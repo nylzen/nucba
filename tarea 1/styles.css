@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #ced4da;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23a7a6a9' fill-opacity='0.23'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+/*  Titulo  */
+.imgs {
+  display: flex;
+  justify-content: center;
+}
+
+.imgs img {
+  width: 600px;
+  height: auto;
+}
+
+/* Pelis */
+.contenedor-peli {
+  display: flex;
+  align-items: center;
+}
+.peli {
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  margin: 20px;
+  box-shadow: 10px 10px 14px rgba(0, 0, 0, 0.3);
+}
+
+.contenido {
+  background-color: #343a40;
+  padding: 50px;
+  border-radius: 20px;
+  margin: 50px;
+}
+
+.contenido h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contenido p {
+  color: #e9ecef;
+}
+
+hr {
+  margin-bottom: 20px;
+  width: 20%;
+}
+
+/* form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #212529;
+  color: #fff;
+  padding: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input {
+  border-radius: 20px;
+}
+
+button {
+  background-color: antiquewhite;
+  padding: 10px;
+  width: 100px;
+}
+
+button:hover {
+  background-color: #212529;
+  color: #fff;
+}
