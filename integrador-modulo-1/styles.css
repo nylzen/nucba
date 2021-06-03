@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --roboto: "Roboto", sans-serif;
+  --indigo: #212459;
+  --yellow: #e6b14f;
+  --red: #fa2b57;
+  --light: #f8f9fa;
+  --dark: #2c2c2c;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+a:hover {
+  border-bottom: 2px solid var(--dark);
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 20px;
+  font-family: var(--roboto);
+  background-color: var(--light);
+}
+
+/* Navbar */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo img {
+  width: 70px;
+}
+
+.navbar-links ul {
+  display: flex;
+}
+
+.navbar-links li {
+  margin-left: 30px;
+}
+
+.navbar-btn {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 1px var(--dark) solid;
+  background: none;
+  transition: all 0.3s ease;
+}
+
+.navbar-btn:hover {
+  background: var(--dark);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Portada */
+.portada-container {
+  background: url("https://cdn.shopify.com/s/files/1/0254/4992/2665/products/BLAST_Premier_WallPaper_Desktop_01.jpg?v=1603119880")
+    no-repeat center/cover;
+  height: 80vh;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.portada-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+}
+
+.portada-info-title {
+  color: var(--yellow);
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.portada-info-p {
+  color: var(--light);
+}
+
+/* Event Info */
+.event-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px 15px;
+  margin: 30px auto;
+}
+
+.event-items {
+  border-right: 2px solid var(--dark);
+  text-align: center;
+  max-width: 25%;
+  flex: 0 0 25%;
+}
+
+.event-items i {
+  font-size: 1.2rem;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.event-items p {
+  font-weight: 700;
+}
+
+.teams {
+  border: none;
+}
+
+/* About Blast */
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  margin: 30px;
+}
+
+.about-text {
+  color: var(--dark);
+}
+
+.about-text h2 {
+  margin-bottom: 25px;
+}
+
+.about-text p {
+  width: 80%;
+  margin-top: 25px;
+  line-height: 1.5;
+}
+
+hr {
+  width: 10%;
+  border-radius: 50px;
+  border: 2px solid var(--dark);
+}
+
+/* Cards  */
+.events-container {
+  margin: 70px 0;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.events-title {
+  text-align: center;
+  color: var(--dark);
+  margin: 50px 0;
+}
+.events-card {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: var(--indigo);
+  transition: all 0.2s ease;
+}
+
+.events-card:hover {
+  transform: translate(0, -5px);
+}
+
+.card-aside img {
+  max-width: 100%;
+}
+
+.card-header,
+.card-body,
+.card-btn {
+  margin: 20px;
+}
+
+.card-title {
+  color: var(--light);
+  background: var(--red);
+  margin-bottom: 10px;
+}
+
+.card-subtitle {
+  color: var(--light);
+}
+
+.card-body {
+  border-top: 1px solid var(--light);
+  border-bottom: 1px solid var(--light);
+  padding: 15px 0px;
+  color: var(--light);
+}
+
+.card-btn {
+  padding: 10px 30px;
+  transition: all 0.3s ease;
+  background: var(--light);
+  border: none;
+}
